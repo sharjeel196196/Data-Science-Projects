@@ -1,0 +1,35 @@
+             Data Cleaning
+             
+The given datasets still contain some inconsistencies and logical problems. We have incorporated five of
+them. Your task is to find and resolve these to have clean datasets for the analysis. Potentially, some
+issues may already been handled by your chosen tool chain. To get a first impression of the data you can
+use the methods describe and info on DataFrames when you are using Pandas. As a resut, we expect
+you to name and describe the found problems and how you have resolved them (including code).
+
+
+            Data Analysis
+            
+With the cleaned datasets answer the following queries:
+1. Which is the most frequent recipe?
+2. How many subcomponents (entities) does each tool (equipment) have and how many wafers where
+processed by each tool?
+3. Which tool achieved the peak energy consumption and how much was this?
+4. Which tool needed the most total energy on the given day based on the value avg field and how
+high was the average per hour?
+5. What activity (segment) was the tool with ID 4216 in from 1999-08-01 07:00 to 1999-08-01 08:00
+and how much total energy did this cost?
+In your report you should state the formulated queries as well as the results of the execution.
+
+
+
+            Dataset Join
+            
+            
+The final task of this sheet is to combine the WIP and energy data for preparation of task sheet 3. For
+this it is enough to describe your idea and formulate it in pseudocode since the intermediate results can
+get much larger than your systems DRAM. A simple cross join and subsequent filter is not suitable here.
+So consider a parameterizable solution that could be adjusted depending on DRAM size. Nevertheless,
+1
+you can get bonus points for actually working code. If you opt for working code, we recommend that you
+filter the data as you experiment and only use the full set if you are sure your system can handle it.
+Note: This is not a pure foreign-key join on a single pair of columns.
